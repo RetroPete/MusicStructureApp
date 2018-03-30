@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin_activity_horizontal">16dp</dimen>
+    <dimen name="margin_activity_vertical">16dp</dimen>
+
+    <dimen name="height_nav_bar">48dp</dimen>
+    <dimen name="height_nav_button">48dp</dimen>
+    <dimen name="margin_nav_button">8dp</dimen>
+    <dimen name="margin_button">16dp</dimen>
+
+    <dimen name="size_now_playing">30dp</dimen>
+    <dimen name="margin_NowPlayingBtn">8dp</dimen>
+
+    <dimen name="text_artist_album">24sp</dimen>
+    <dimen name="margin_artist_album">16dp</dimen>
+
+    <dimen name="text_lyrics">16sp</dimen>
+    <dimen name="margin_lyrics">16dp</dimen>
+
+    <dimen name="text_song_title">32sp</dimen>
+    <dimen name="margin_song_title">16dp</dimen>
+    <dimen name="size_album_image">200dp</dimen>
+
+    <dimen name="margin_Song">4dp</dimen>
+
+    <dimen name="textSize_ArtistAlbum">24sp</dimen>
+    <dimen name="margin_ArtistAlbum">16dp</dimen>
+
+    <dimen name="size_album_art">90dp</dimen>
+    <dimen name="size_activity_album">50dp</dimen>
+
+    <dimen name="textSize_Lyrics">16sp</dimen>
+    <dimen name="margin_Lyrics">16dp</dimen>
+
+
+
+
+</resources>

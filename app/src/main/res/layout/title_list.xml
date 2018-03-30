@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/size_album_art"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/playlistImage"
+        android:layout_width="@dimen/size_album_art"
+        android:layout_height="@dimen/size_album_art"
+        android:src="@drawable/album_1" />
+
+    <LinearLayout
+        android:id="@+id/composition_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_activity_album"
+        android:layout_alignBottom="@id/playlistImage"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/playlistImage"
+        android:layout_toRightOf="@id/playlistImage"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/margin_activity_vertical"
+        android:paddingEnd="@dimen/margin_activity_vertical">
+
+        <TextView
+            android:id="@+id/playlistTitle"
+            style="@style/albumText"
+            android:textStyle="bold"
+            tools:text="Title"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+        <TextView
+            android:id="@+id/playlistArtist"
+            style="@style/albumText"
+            android:textAppearance="?android:textAppearanceSmall"
+            tools:text="Artist" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/play_arrow"
+        android:layout_width="@dimen/size_now_playing"
+        android:layout_height="@dimen/size_now_playing"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/margin_activity_vertical"
+        android:layout_marginRight="@dimen/margin_activity_vertical"
+        android:src="@drawable/play_button" />
+
+</RelativeLayout>

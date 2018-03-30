@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_NowPlaying"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NowPlayingActivity">
+
+    <LinearLayout
+        style="@style/navBarBackground"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_nav_bar"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/nowPlaying"
+            style="@style/navBarButtons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/nowplaying_icon" />
+
+        <ImageView
+            android:id="@+id/playlist"
+            style="@style/navBarButtons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/playlist_back_icon" />
+
+        <ImageView
+            android:id="@+id/album"
+            style="@style/navBarButtons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/album_back_icon" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/song_title"
+                style="@style/songTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/songNowPlaying" />
+
+            <ImageView
+                android:id="@+id/album_cover"
+                style="@style/songImage"
+                android:layout_width="@dimen/size_album_image"
+                android:layout_height="@dimen/size_album_image"
+                android:src="@drawable/album_1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_activity_horizontal"
+                android:layout_marginRight="@dimen/margin_activity_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/songDurationPlaying"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zeroDuration" />
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_button"
+                    android:layout_weight="8" />
+
+                <TextView
+                    style="@style/songDurationPlaying"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/songDuration" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_button"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/shuffle"
+                    style="@style/nowPlayingBtn"
+                    android:layout_width="@dimen/size_now_playing"
+                    android:layout_height="@dimen/size_now_playing"
+                    android:src="@drawable/shuffle_button" />
+
+                <ImageButton
+                    android:id="@+id/previous"
+                    style="@style/nowPlayingBtn"
+                    android:layout_width="@dimen/size_now_playing"
+                    android:layout_height="@dimen/size_now_playing"
+                    android:src="@drawable/previous_button" />
+
+                <ImageButton
+                    android:id="@+id/play"
+                    style="@style/nowPlayingBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/play_button" />
+
+                <ImageButton
+                    android:id="@+id/next"
+                    style="@style/nowPlayingBtn"
+                    android:layout_width="@dimen/size_now_playing"
+                    android:layout_height="@dimen/size_now_playing"
+                    android:src="@drawable/next_button" />
+
+                <ImageButton
+                    android:id="@+id/repeat"
+                    style="@style/nowPlayingBtn"
+                    android:layout_width="@dimen/size_now_playing"
+                    android:layout_height="@dimen/size_now_playing"
+                    android:src="@drawable/repeat_button" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/artistAlbum"
+                style="@style/artistAlbum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/songArtist_Album"
+                android:textSize="@dimen/text_lyrics" />
+
+            <TextView
+                android:id="@+id/lyrics"
+                style="@style/lyrics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/songLyrics"
+                android:textSize="@dimen/text_lyrics" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

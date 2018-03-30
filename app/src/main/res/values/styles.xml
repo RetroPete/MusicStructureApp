@@ -1,0 +1,77 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="navBarBackground">
+        <item name="android:background">@color/colorNavBar</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="navBarButtons">
+        <item name="android:layout_margin">@dimen/margin_nav_button</item>
+        <item name="android:gravity">center</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="songTitle">
+        <item name="android:layout_marginTop">@dimen/margin_song_title</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/text_song_title</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="songImage">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/margin_song_title</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="songDuration">
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_marginTop">@dimen/margin_Song</item>
+    </style>
+
+    <style name="songDurationPlaying">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginTop">@dimen/margin_button</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="nowPlayingBtn">
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:layout_marginRight">@dimen/margin_NowPlayingBtn</item>
+        <item name="android:layout_marginLeft">@dimen/margin_NowPlayingBtn</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="albumText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="artistAlbum">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">@dimen/margin_ArtistAlbum</item>
+        <item name="android:textSize">@dimen/textSize_ArtistAlbum</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="lyrics">
+        <item name="android:padding">@dimen/margin_Lyrics</item>
+        <item name="android:textSize">@dimen/textSize_Lyrics</item>
+    </style>
+
+
+</resources>
