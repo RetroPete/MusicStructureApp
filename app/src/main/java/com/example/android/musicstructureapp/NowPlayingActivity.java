@@ -11,9 +11,8 @@ import android.widget.Toast;
 
 public class NowPlayingActivity extends AppCompatActivity {
 
-    TextView nowPlayingTitle, nowPlayingArtistAlbum;
     ImageView nowPlayingButton, prevSongButton, nextSongButton;
-    ImageView nowPlayingImage, shuffleButton, repeatButton;
+    ImageView shuffleButton, repeatButton;
 
     boolean nowPlayingSong = false;
 
