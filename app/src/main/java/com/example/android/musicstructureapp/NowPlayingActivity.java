@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class NowPlayingActivity extends AppCompatActivity {
@@ -57,7 +56,6 @@ public class NowPlayingActivity extends AppCompatActivity {
         shuffleButton = (ImageButton) findViewById(R.id.shuffle);
         repeatButton = (ImageButton) findViewById(R.id.repeat);
 
-        // Define behaviour of "play/stop" button.
         nowPlayingButton.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when nowPlayingButton is clicked on.
             @Override

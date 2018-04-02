@@ -1,34 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/albumScreen"
-    android:layout_height="wrap_content"
-    android:layout_width="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
     <ImageView
-        android:contentDescription="@string/album"
         android:id="@+id/albumImage"
-        android:layout_height="@dimen/size_album_art"
         android:layout_width="@dimen/size_album_art"
+        android:layout_height="@dimen/size_album_art"
+        android:contentDescription="@string/album"
         android:src="@drawable/album_1" />
 
     <LinearLayout
         android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_activity_album"
         android:layout_alignBottom="@id/albumImage"
         android:layout_alignParentTop="true"
-        android:layout_height="@dimen/size_activity_album"
         android:layout_toEndOf="@id/albumImage"
         android:layout_toRightOf="@id/albumImage"
-        android:layout_width="match_parent"
         android:orientation="vertical"
-        android:paddingStart="@dimen/margin_activity_vertical"
-        android:paddingLeft="@dimen/margin_activity_vertical">
+        android:paddingEnd="@dimen/margin_activity_vertical"
+        android:paddingLeft="@dimen/margin_activity_vertical"
+        android:paddingRight="@dimen/margin_activity_vertical"
+        android:paddingStart="@dimen/margin_activity_vertical">
 
         <TextView
-            style="@style/albumText"
             android:id="@+id/albumText"
+            style="@style/albumText"
             android:textAppearance="?android:textAppearanceMedium"
             android:textStyle="bold"
             tools:text="@string/album" />

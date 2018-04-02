@@ -12,7 +12,7 @@ public class Playlist {
 
     private int mImageAlbum = NO_IMAGE_PROVIDED;
 
-    public Playlist(String title, String nameArtist, String nameAlbum,  int imageResourceId) {
+    public Playlist(String title, String nameArtist, String nameAlbum, int imageResourceId) {
         mTitle = title;
         mNameArtist = nameArtist;
         mNameAlbum = nameAlbum;
